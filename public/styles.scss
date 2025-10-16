@@ -13,6 +13,67 @@ textarea {
   border-radius: 2px;
 }
 
+input,
+textarea {
+  display: block;
+  width: calc(100% - 8px);
+}
+
+fieldset {
+  margin-bottom: 8px;
+}
+
+label {
+  font-weight: bold;
+}
+
+label>p {
+  font-weight: normal;
+}
+
+input,
+textarea {
+  font-size: 16px;
+}
+
+button {
+  padding: 5px 25px;
+}
+
+.container {
+  display: flex;
+  gap: 14px;
+}
+
+.container label {
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin: 14px 0;
+}
+
+.results {
+  background: #eee;
+  padding: 1px 14px;
+}
+
+.results.success {
+  border-left: 6px solid #05b005;
+}
+
+.results.error {
+  border-left: 6px solid #d70303;
+}
+
+section:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+
 .loader-wrapper {
   display: flex;
   align-items: center;
@@ -107,4 +168,17 @@ textarea {
   .loader {
     color: #555;
   }
+
+  .results {
+    background: #2d2d2d;
+  }
+
+  .results.success {
+    border-left: 6px solid #067506;
+  }
+
+  .results.error {
+    border-left: 6px solid #8a0707;
+  }
+
 }
