@@ -39,6 +39,12 @@ pub fn App() -> impl IntoView {
             }
         }>
             <Calculator />
+            <script
+                src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.4.4/iframeResizer.contentWindow.min.js"
+                integrity="sha512-IWwZFBvHzN41wNI6etRLLuLrDDj/6AwJcPt7cmKJAzluYTIHHQ1PF8wh0rSy05jxEvvjflVvH2MxeV6riyEEXg=="
+                crossorigin="anonymous"
+                referrerpolicy="no-referrer"
+            />
         </ErrorBoundary>
     }
 }
