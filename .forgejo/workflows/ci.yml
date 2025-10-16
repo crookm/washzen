@@ -14,9 +14,9 @@ jobs:
       - name: Checkout
         uses: https://enduringtech.dev/actions/checkout-action@08eba0b27e820071cde6df949e0beb9ba4906955 # v4
       - name: Set up Rust
-        uses: https://enduringtech.dev/actions/setup-rust-action@1780873c7b576612439a134613cc4cc74ce5538c # v1
+        uses: https://enduringtech.dev/actions/setup-rust-action@5d458579430fc14a04a08a1e7d3694f545e91ce6 # stable
         with:
-          target: wasm32-unknown-unknown
+          targets: wasm32-unknown-unknown
       - name: Set up Trunk
         run: cargo install trunk
 
