@@ -4,7 +4,7 @@ A simple project to calculate how long you should use the 'delay' function on yo
 
 This is a toy project I am using to learn Rust in WASM.
 
-## Building and Running
+## Building
 
 This project uses Leptos, specifically the client-side rendering variant of it. To build and run, you will need to follow the instructions available in
 the [Getting Started](https://book.leptos.dev/getting_started/index.html) section of the Leptos book.
