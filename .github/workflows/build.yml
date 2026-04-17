@@ -1,4 +1,4 @@
-name: Build Validation
+name: CI
 
 on:
   pull_request:
@@ -18,6 +18,11 @@ jobs:
 
       - name: Set up Rust toolchain
         uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: wasm32-unknown-unknown
 
-      - name: Build release
-        run: cargo build --release
+      - name: Install Trunk
+        run: cargo install trunk
+
+      - name: Build release with Trunk
+        run: trunk build --release
